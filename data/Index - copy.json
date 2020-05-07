@@ -1,0 +1,36 @@
+{
+  "General": {
+    "Dim": 15,
+    "N": 2,
+	"Alph":[1, 0]
+  },
+  "Songs": [
+    {
+      "capo": 6,
+      "link": "C:\\Users\\Francesco\\Documents\\Processing\\Projects\\Music\\data\\The_sound_of_silence",
+      "Title": "The Sound of Silence",
+      "Author": "Disturbed",
+      "ID": 0
+    },
+    {
+      "capo": 5,
+      "link": "C:\\Users\\Francesco\\Documents\\Processing\\Projects\\Music\\data\\hallelujah",
+      "Title": "Hallelujah (Pentatonix version)",
+      "Author": "Leonard Cohen (Pentatonix)",
+      "ID": 1
+    }
+  ],
+  "Abbreviations": {
+    "General": {
+      "Dim": "Height of half the clickable box",
+      "N": "Number of songs",
+      "Alph": "Id list ordered alphabetically by title"
+    },
+    "Songs": {
+      "link": "reference to the song's folder",
+      "Title": "Title of the song",
+      "Author": "Author of the song",
+      "ID": "Id of the song in the app"
+    }
+  }
+}
