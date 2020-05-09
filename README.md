@@ -67,7 +67,8 @@ However, if you really have to remove a song, you can do it by following these s
 - in the "General"/"Alph" list, lower every number greater than your ID by one, and remove the number which is equal to your ID
 - remove the section that represents your song (similar to what below)
 - please check that after every closing brace there is one comma, except for the last one which should have a closed square bracket instead
-'''
+
+```
     {
       "capo": 6,
       "link": "The_sound_of_silence",
@@ -75,4 +76,4 @@ However, if you really have to remove a song, you can do it by following these s
       "Author": "Disturbed",
       "ID": 0
     }
-'''
+```
