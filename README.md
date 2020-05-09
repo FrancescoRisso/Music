@@ -1,5 +1,6 @@
 # Song_scroller
-This is a pc application, made by a guitarist for musicians, in particular for other guitar players.
+This is a pc application, made by a guitarist for musicians and singers, in particular for other guitar players.
+It is useful if you want to play (or sing) a song with scrolling lirics and chords, while listening to the original song.
 
 # Compatibility
 This app works on Windows and Linux. I do not have the possibility to test it on macOS.
