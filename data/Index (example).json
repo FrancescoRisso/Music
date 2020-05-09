@@ -7,14 +7,14 @@
   "Songs": [
     {
       "capo": 6,
-      "link": "C:\\Users\\Francesco\\Documents\\Processing\\Projects\\Music\\data\\The_sound_of_silence",
+      "link": "The_sound_of_silence",
       "Title": "The Sound of Silence",
       "Author": "Disturbed",
       "ID": 0
     },
     {
       "capo": 5,
-      "link": "C:\\Users\\Francesco\\Documents\\Processing\\Projects\\Music\\data\\hallelujah",
+      "link": "hallelujah",
       "Title": "Hallelujah (Pentatonix version)",
       "Author": "Leonard Cohen (Pentatonix)",
       "ID": 1

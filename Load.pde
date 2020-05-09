@@ -1,4 +1,10 @@
-//LOADS ALL THE DATA FROM data/Input.json
+/*   ___________________________________________
+    |                                           |
+    |    LOAD ALL THE DATA FROM "Index.json"    |
+    |___________________________________________|
+    
+For better understanding of the variables, please refer to "Variables.pde" file
+*/
 
 void load(){
 

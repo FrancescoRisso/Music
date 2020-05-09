@@ -1,10 +1,19 @@
+/*   _____________________________________
+    |                                     |
+    |    THIS IS THE "NEW SONG" SCREEN    |
+    |_____________________________________|
+
+For better understanding of the variables, please refer to "Variables.pde" file
+*/
+
+//The screen itself. To see how to add a new song, check below
 void newSong(){
   
 //Creates rectangle for "Back" button
   fill(255);
   rect(Xrect_new, Yrect_new, Wrect_new, Hrect_new);
   
-//Creates rectangle for "Back" button
+//Creates text for "Back" button
   fill(0);
   textAlign(CENTER, CENTER);
   text("Back", Xrect_new, Yrect_new, Wrect_new, Hrect_new);
@@ -13,29 +22,34 @@ void newSong(){
   textAlign(LEFT, TOP);
   
   switch(input){
-//We have to input or we have already inserted the link
+  //We have to input the capo position
     case 'C':
       text("Insert capo position:\n\n" + capo, 20, 360);
       
-//We have to input or we have already inserted the link
+  //We have to input or we have already inserted the link
     case 'L':
       text("Insert folder name:\n\n" + link, 20, 270);
     
-//We have to input or we have already inserted the author
+  //We have to input or we have already inserted the author
     case 'A':
       text("Insert artist:\n\n" + author, 20, 180);
     
-//We have to input or we have already inserted the title 
+  //We have to input or we have already inserted the title 
     case 'T':
       text("Insert title:\n\n" + title, 20, 90);
   }
-  
-  
-  
 }
 
 
 
+
+/*   ____________________________________________
+    |                                            |
+    |    THIS IS ALL NEEDED TO ADD A NEW SONG    |
+    |____________________________________________|
+
+For better understanding of the variables, please refer to "Variables.pde" file
+*/
 
 void addSong(){
   
@@ -54,7 +68,8 @@ void addSong(){
   general = new JSONObject();
   general.setInt("N", Nsongs + 1);
   general.setInt("Dim", Dim);
-  
+
+//Insert the song ID in the correct position of the alphabetic order
   i = 0;
   title = title.toLowerCase();
   found = false;
@@ -89,6 +104,7 @@ void addSong(){
   tmp_arr = new JSONArray();
   for(i=0; i <= Nsongs; i++){ tmp_arr.append(Alph[i]); }
   
+//Adds the new alphabetic order to the "general" section 
   general.setJSONArray("Alph", tmp_arr);
   
 //Sets up the "index" JSON object to be the updated version of Input.json
@@ -101,6 +117,4 @@ void addSong(){
   
 //Reloads the new Index.json into the program variables
   load();
-  
-  println("Done");
 }

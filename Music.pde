@@ -1,55 +1,70 @@
-import ddf.minim.*;
+/*   ________________________________
+    |                                |
+    |    THIS IS THE MAIN SECTION    |
+    |________________________________|
+    
+For better understanding of the variables, please refer to "Variables.pde" file
+*/
 
-import processing.sound.*;
 
-//THIS IS THE MAIN SECTION
 
+
+/*
+THE FIRST THINGS THAT GETS DONE WHEN THE APPLICATION STARTS
+*/
 
 void setup(){
+  
+//Set default window size and make it resizable
   size(1280, 720);
-  background(255);
   surface.setResizable(true);
   
 //Load all the songs data
   load();
   
-//background white
+//Background white
   background(255);
   
-//load all the fonts
+//Load the font
   font = loadFont("CourierNewPSMT-20.vlw");
   textFont(font, 17);
-  
+ 
+//Load the image
   notes = loadImage("notes.png");
   Wnotes = notes.width * Ymin / notes.height;
 }
 
 
 
-//Every "tick" do:
+
+
+/*
+WHAT GETS DONE EVERY "TICK" WHEN THE APPLICATION IS RUNNING
+*/
+
 void draw(){
 
-//clear all
+//Clear all
   background(255);
   
 //Set all the required variables
   Xrect_new = width - LXrect_new;
   Wrect_new = width - Xrect_new - 10;
 
-//call the function relative to what he has to do
+//Call the function relative to what he has to do
   switch(state){
     
-//We are in the main menu
+  //We are in the main menu
     case 'M':
       menu();
       break;
       
-//We want to insert a new song 
+  //We want to insert a new song 
     case 'N':
       newSong();
       break;
       
-//We want to play a song 
+  //We want to play a song 
     case 'S':
       song();
       break;
