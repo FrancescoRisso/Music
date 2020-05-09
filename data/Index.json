@@ -1,25 +1,10 @@
 {
   "General": {
     "Dim": 15,
-    "N": 2,
-	"Alph":[1, 0]
+    "N": 0,
+    "Alph":[]
   },
-  "Songs": [
-    {
-      "capo": 6,
-      "link": "The_sound_of_silence",
-      "Title": "The Sound of Silence",
-      "Author": "Disturbed",
-      "ID": 0
-    },
-    {
-      "capo": 5,
-      "link": "hallelujah",
-      "Title": "Hallelujah (Pentatonix version)",
-      "Author": "Leonard Cohen (Pentatonix)",
-      "ID": 1
-    }
-  ],
+  "Songs": [{}],
   "Abbreviations": {
     "General": {
       "Dim": "Height of half the clickable box",
