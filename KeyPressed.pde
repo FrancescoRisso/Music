@@ -10,11 +10,11 @@ void keyPressed(){
   
   switch(state){
     
-  //We are creating a new song, so we want to imput Title, artist and reference link
+  //We are creating a new song, so we want to input Title, artist and reference link
     case 'N':
       switch(input){
   
-      //We are imputing the title of the song
+      //We are inputing the title of the song
         case 'T':
           switch(keyCode){
 
@@ -40,7 +40,7 @@ void keyPressed(){
           }
           break;
          
-      //We are imputing the artist of the song
+      //We are inputing the artist of the song
         case 'A':
           switch(keyCode){
 
@@ -66,7 +66,7 @@ void keyPressed(){
           }
           break;
          
-      //We are imputing the link of the folder song
+      //We are inputing the link of the folder song
         case 'L':
           switch(keyCode){
 
@@ -92,7 +92,7 @@ void keyPressed(){
           }
           break;
          
-      //We are imputing the capo position
+      //We are inputing the capo position
         case 'C':
           switch(keyCode){
 
@@ -116,7 +116,7 @@ void keyPressed(){
               capo = 0;
               break;
               
-          //Another key has been pressed: we append it to the already-written link
+          //Another key has been pressed: we append it to the already-written capo position
             default:
               if(capo !=0){ capo = capo*10 + key - 48; }
               else { capo = key - 48; }
