@@ -70,7 +70,7 @@ However, if you really have to remove a song, you can do it by following these s
       `capo`: 6,
       `link`: `The_sound_of_silence`,
       `Title`: `The Sound of Silence`,
-      `Author`: `Disturbed`,
+      `Author`: `Simon & Garfunkel`,
       `ID`: 0
     }
 ```
