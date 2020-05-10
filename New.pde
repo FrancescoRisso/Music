@@ -53,7 +53,7 @@ For better understanding of the variables, please refer to "Variables.pde" file
 
 void addSong(){
   
-//Adds all the infos of the song in this "song" JSON object
+//Adds all the info of the song in this "song" JSON object
   song = new JSONObject();
   song.setInt("ID", Nsongs);
   song.setString("Title", title);
@@ -64,7 +64,7 @@ void addSong(){
 //Adds the song to the "songs" list
   songs.append(song);
   
-//Creates the new "general" section og Input.json (N increased by 1)
+//Creates the new "general" section of Input.json (N increased by 1)
   general = new JSONObject();
   general.setInt("N", Nsongs + 1);
   general.setInt("Dim", Dim);
