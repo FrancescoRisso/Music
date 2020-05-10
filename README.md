@@ -12,7 +12,7 @@ This application is written using Processing 3 in Java mode, which is the defaul
 ## Windows
 - From the [download page]() download the application for the version of your Windows (x32 or x64)
 - Unzip the zipped folder wherever you want on your computer
-- Launch the `Music.exe`, and you are ready to go
+- Launch `Music.exe`, and you are ready to go
 
 ## Linux
 todo
