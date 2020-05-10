@@ -30,7 +30,6 @@ void menu(){
   fill(0);
   text("Close", Xrect_close, Yrect_new, Wrect_new, Hrect_new);
   
-  
 //Creates rectangle for "New song" button
   fill(255);
   rect(Xrect_new, Yrect_new, Wrect_new, Hrect_new);
