@@ -14,14 +14,14 @@ void mousePressed(){
     case 'M':
     
     //We pressed the "New song" button
-      if(mouseX > Xrect_new && mouseX < Xrect_new + Wrect_new  && mouseY > Yrect_new && mouseY < Yrect_new + Hrect_new){
+      if((mouseX > Xrect_new) && (mouseX < Xrect_new + Wrect_new) && (mouseY > Yrect_new) && (mouseY < Yrect_new + Hrect_new)){
         state = 'N';
         input = 'T';
         break;
       }
     
     //We pressed the "Close" button
-      if(mouseX > Xrect_close && mouseX < Xrect_close + Wrect_new  && mouseY > Yrect_new && mouseY < Yrect_new + Hrect_new){
+      if((mouseX > Xrect_close) && (mouseX < Xrect_close + Wrect_new ) && (mouseY > Yrect_new) && (mouseY < Yrect_new + Hrect_new)){
         exit();
         break;
       }
@@ -38,12 +38,11 @@ void mousePressed(){
         break;
       }
       
-      
   //We are in the "New song" section
     case 'N':
     
     //We pressed the "Back" button
-      if(mouseX > Xrect_new && mouseX < Xrect_new + Wrect_new  && mouseY > Yrect_new && mouseY < Yrect_new + Hrect_new){
+      if((mouseX > Xrect_new) && (mouseX < Xrect_new + Wrect_new ) && (mouseY > Yrect_new) && (mouseY < Yrect_new + Hrect_new)){
         state = 'M';
         input = ' ';
         author = "";
@@ -52,12 +51,11 @@ void mousePressed(){
       }
       break;
       
-      
   //We are in the "Song" section
     case 'S':
     
     //We pressed the "Back" button
-      if(mouseX > Xrect_new && mouseX < Xrect_new + Wrect_new  && mouseY > Yrect_new && mouseY < Yrect_new + Hrect_new){
+      if((mouseX > Xrect_new) && (mouseX < Xrect_new + Wrect_new ) && (mouseY > Yrect_new) && (mouseY < Yrect_new + Hrect_new)){
         state = 'M';
         audio.pause();
         playing = false;
@@ -65,7 +63,7 @@ void mousePressed(){
       }
     
     //We pressed the "Play/Pause" button
-      if(mouseX > Xrect_close && mouseX < Xrect_close + Wrect_new  && mouseY > Yrect_new && mouseY < Yrect_new + Hrect_new){
+      if((mouseX > Xrect_close) && (mouseX < Xrect_close + Wrect_new ) && (mouseY > Yrect_new) && (mouseY < Yrect_new + Hrect_new)){
         if(playing) {
           playing = false;
           audio.pause();
